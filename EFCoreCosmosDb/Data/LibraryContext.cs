@@ -9,8 +9,8 @@ namespace EFCoreCosmosDb.Data
         #region Configuration
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
             => optionsBuilder.UseCosmos(
-                "AccountEndpoint=https://iliev-cosmos-db.documents.azure.com:443/;AccountKey=oe9H5r7wnVZS83KdXNbagVYQWNribdZeCvgMCelpLT7iLehNOTZXsmylW9i9DaPlviql1YcgTb50ACDbx0ARjA==;",
-                databaseName: "studentdb");
+                "<cosmos-db-connection-string>",
+                databaseName: "<cosmos-database-name>");
         #endregion
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
